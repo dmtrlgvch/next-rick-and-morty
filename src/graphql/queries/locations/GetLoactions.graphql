@@ -1,0 +1,14 @@
+query GetLocations($page: Int, $filter: FilterLocation) {
+  locations(page: $page, filter: $filter) {
+    info {
+      ...PaginationInfo
+    }
+    results {
+      id
+      name
+      type
+      dimension
+      created
+    }
+  }
+}

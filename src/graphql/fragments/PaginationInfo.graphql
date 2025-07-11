@@ -1,0 +1,6 @@
+fragment PaginationInfo on Info {
+  count
+  pages
+  next
+  prev
+}

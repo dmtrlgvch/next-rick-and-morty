@@ -1,0 +1,10 @@
+query GetCharacters($page: Int, $filter: FilterCharacter) {
+  characters(page: $page, filter: $filter) {
+    info {
+      ...PaginationInfo
+    }
+    results {
+      ...CharacterBaseInfo
+    }
+  }
+}
